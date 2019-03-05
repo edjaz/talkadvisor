@@ -1,0 +1,3 @@
+talkAdvisor:
+  api:
+    base-uri: http://localhost:8090
