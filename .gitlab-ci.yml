@@ -10,7 +10,7 @@ cache:
   stage: test
   script:
     - 'git clone https://gitlab.com/crafts-records/talkadvisor/talkadvisor-back.git backend'
-    - 'mvn install -Dmaven.test.skip=true -Dcucumber.report.skip=true -f backend/pom.xml'
+    - 'mvn install -DskipTests -Dcucumber.report.skip=true -f backend/pom.xml'
     - 'mvn $MAVEN_CLI_OPTS verify'
 
 verify:jdk8:
