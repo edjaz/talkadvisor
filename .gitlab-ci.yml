@@ -9,6 +9,8 @@ cache:
 .verify: &verify
   stage: test
   script:
+    - 'git clone git@gitlab.com:crafts-records/talkadvisor/talkadvisor-back.git backend'
+    - 'ls backend/'
     - 'mvn $MAVEN_CLI_OPTS verify'
 
 verify:jdk8:
